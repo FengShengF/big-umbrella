@@ -1,0 +1,122 @@
+/* 进入页面隐藏 */
+#active-box,#play-video{
+    display: none;
+}
+
+/* 首页 */
+#indexs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:28px;
+    color:#fff;
+}
+#indexs p{
+    font-size:28px;
+    color:#fff;
+    font-family: BrandonGrotesque;
+}
+
+/* 页面加载中 */
+#loading{
+    font-size:28px;
+    color:#fff;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 描述 */
+.description{
+    color: #9FA5AE;
+    text-align: center;
+    font-size: 14px;
+}
+.description1{
+    color: #fff;
+    letter-spacing:3px;
+    font-size: 16px;
+}
+.next{
+    display:inline-block;
+    padding:2px 6px;
+    background:#fff;
+    color:#000;
+    border-radius:12px;
+    cursor: pointer;
+}
+
+/* 两侧icon */
+.dao-icon{
+    width:16px;
+    height:56px;
+    position:absolute;
+    left:50%;
+    bottom:10px;
+    transform: translateX(-8px);
+}
+.line{
+    width:1px;
+    height:calc(100% - 11px);
+    position:absolute;
+    left:50%;
+    top:0;
+    background:#fff;
+}
+.guide-icon{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-4px)
+}
+#box-left-img .dao-icon{
+    width:27px;
+    height:auto;
+    transform: translateX(-17.5px);
+}
+#box-left-img .line{
+    background:#202020;
+}
+.suo-icon{
+    position:absolute;
+    left:50%;
+    top:10px;
+    width:16px;
+    transform: translateX(-8px);
+    display:none;
+    z-index:1;
+}
+
+/* 中间图定位文字 */
+.center-img {
+    position:relative;
+}
+.center-img p{
+    position:absolute;
+    right:20px;
+    top:20px;
+    border:1px solid #fff;
+    padding:4px 8px;
+    border-radius:10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* 指引icon */
+/* #box-left-img .guide-icon{
+    display:none;
+} */
+.guide-icon{
+    display:none;
+    width:36px;
+}
+
+/* center img */
+#box-center{
+    text-align: center;
+}
+
+#box-center-img img{
+    border:2px solid #fff;
+    border-radius:5px;
+}
