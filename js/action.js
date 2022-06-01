@@ -5,20 +5,23 @@ $(function () {
         leftGuideTop = 44, //固定导管手势的置顶距离
         daoBoxHeight = $(`#box-right-img .dao-box`).height();
 
-    guideBlink({
-        shows: '#box-right-img'
-    });
-    // 导丝滑动
-    animationCall({
-        el: '#box-right-img',
-        daoHeight: daosiTop,
-        callBack: daosiCall,
-        imgLength: 44,
-        imgFile: httpName + '/gongsi',
-        description1: '攻丝（成功送入导丝）',
-        imgText: '送入保护伞',
-        description2: '点击固定导丝位置',
-    });
+    setTimeout(() => {
+        guideBlink({
+            shows: '#box-right-img'
+        });
+        // 导丝滑动
+        animationCall({
+            el: '#box-right-img',
+            daoHeight: daosiTop,
+            callBack: daosiCall,
+            imgLength: 44,
+            imgFile: httpName + '/gongsi',
+            description1: '攻丝（成功送入导丝）',
+            imgText: '送入保护伞',
+            description2: '点击固定导丝位置',
+        });
+    }, 10000);
+
 
     // 导丝输送成功回调         第一步
     function daosiCall() {
@@ -160,9 +163,9 @@ $(function () {
             transform: 'translateX(-14.5px)'
         });
         $('.center-img').height($('.center-img').height())
-        $('.center-img').append(`<img style="width: 100%;display:none;position:absolute;left:0;top:0;z-index:10" src="./assets/videoImg/01.jpg" alt="">`)
+        $('.center-img').append(`<img style="width: 100%;display:none;position:absolute;left:0;top:0;z-index:10" src="./assets/videoImg/01.jpeg" alt="">`)
         $('.center-img').append(`<img style="width: 100%;display:none;position:absolute;left:0;top:0;z-index:9" src="./assets/videoImg/02.jpg" alt="">`)
-        $('.center-img').append(`<img style="width: 100%;display:none;position:absolute;left:0;top:0;z-index:8" src="./assets/videoImg/03.jpg" alt="">`)
+        $('.center-img').append(`<img style="width: 100%;display:none;position:absolute;left:0;top:0;z-index:8" src="./assets/videoImg/03.jpeg" alt="">`)
         $('.center-img img').eq(0).fadeOut(3000);
         $('.center-img img').eq(1).fadeIn(3000);
 

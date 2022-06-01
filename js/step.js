@@ -7,6 +7,12 @@ $(function () {
             $('#active-box').css({
                 display: 'flex'
             });
+            setTimeout(() => {
+                $('.center-img .loading-img').fadeOut(1000);
+            }, 6000)
+            setTimeout(() => {
+                $('.center-img .loading-img').remove();
+            }, 7000)
         } else {
             $('#loading').css({
                 display: 'flex',
@@ -23,6 +29,12 @@ $(function () {
                     $('#active-box').css({
                         display: 'flex'
                     });
+                    setTimeout(() => {
+                        $('.center-img .loading-img').fadeOut(1000);
+                    }, 6000)
+                    setTimeout(() => {
+                        $('.center-img .loading-img').remove();
+                    }, 7000)
                 }
             }, 500)
         }
